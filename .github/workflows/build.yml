@@ -21,6 +21,9 @@ jobs:
           distribution: 'temurin'
           cache: maven
 
+      - name: List plugin folder
+        run: ls -la ShieldsSMP-plugin
+
       - name: Build with Maven
         run: mvn clean package -B
         working-directory: ShieldsSMP-plugin
