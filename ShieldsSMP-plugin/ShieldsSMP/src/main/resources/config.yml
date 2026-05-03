@@ -1,0 +1,44 @@
+# ==========================================
+#         ShieldsSMP – config.yml
+# ==========================================
+
+mace:
+  # ── DASH ──────────────────────────────────
+  dash:
+    # Horizontal + slight upward boost on right-click
+    velocity: 1.6
+    # Cooldown in seconds
+    cooldown: 5
+
+  # ── WINDBURST ─────────────────────────────
+  windburst:
+    # Radius of the push (blocks)
+    radius: 6.0
+    # Push force applied to nearby entities
+    force: 2.8
+    # Cooldown in seconds
+    cooldown: 8
+    # Minimum airborne ticks before a landing triggers windburst
+    # (prevents micro-hop spam; 10 ticks ≈ 0.5 s)
+    min-airborne-ticks: 10
+
+  # ── 3-HIT LAUNCH ──────────────────────────
+  combo:
+    # Hits required to trigger launch
+    hits-required: 3
+    # Seconds allowed between hits before combo resets
+    reset-seconds: 5
+    # Y-velocity applied to the launched entity (~50 blocks at 3.2)
+    launch-velocity: 3.2
+
+  # ── LANDING SHOCKWAVE ─────────────────────
+  shockwave:
+    # Radius of the shockwave (blocks)
+    radius: 10.0
+    # Knockback force on shockwave victims
+    knockback: 2.0
+    # Armor durability removed = (max-durability * damage-fraction) per piece
+    # 0.5 = half max durability per piece
+    armor-damage-fraction: 0.5
+    # If true, armor can fully break from the shockwave
+    allow-break: false
