@@ -1,0 +1,28 @@
+name: ShieldsSMP
+version: '${project.version}'
+main: com.shieldssmp.ShieldsSMP
+api-version: '1.21'
+description: Shields SMP – Custom Mace Abilities (Dash, 3-Hit Launch + Shockwave)
+authors: [ ShieldsSMP ]
+
+commands:
+  mace:
+    description: Receive the Shields SMP Mace
+    usage: /mace [player]
+    permission: shieldssmp.mace
+  macecooldown:
+    description: Get or set the mace landing cooldown
+    usage: /macecooldown [seconds]
+    permission: shieldssmp.admin
+  macereload:
+    description: Reload ShieldsSMP config
+    usage: /macereload
+    permission: shieldssmp.admin
+
+permissions:
+  shieldssmp.mace:
+    description: Allows receiving the Shields SMP Mace
+    default: op
+  shieldssmp.admin:
+    description: Admin commands for ShieldsSMP
+    default: op
