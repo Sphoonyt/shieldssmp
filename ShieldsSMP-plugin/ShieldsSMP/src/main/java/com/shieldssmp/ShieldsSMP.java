@@ -56,7 +56,7 @@ public final class ShieldsSMP extends JavaPlugin {
         mythicalItemListener = new MythicalItemListener(this);
         getServer().getPluginManager().registerEvents(mythicalItemListener, this);
         getServer().getPluginManager().registerEvents(new com.shieldssmp.listeners.AbilityKeybindListener(this), this);
-        getServer().getPluginManager().registerEvents(new AbilityHUDListener(this), this);
+        getServer().getPluginManager().registerEvents(new com.shieldssmp.listeners.AbilityHUDListener(this), this);
 
         // Commands
         ClassCommands cc = new ClassCommands(this);
