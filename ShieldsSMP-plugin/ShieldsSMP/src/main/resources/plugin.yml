@@ -1,0 +1,103 @@
+name: ShieldsSMP
+version: '${project.version}'
+main: com.shieldssmp.ShieldsSMP
+api-version: '1.21'
+description: Shields SMP – Full Class System + Mace. F=Ability1/2, Q=Ultimate
+authors: [ ShieldsSMP ]
+
+commands:
+  ability:
+    description: Use ability 1 or 2
+    usage: /ability <1|2>
+    permission: shieldssmp.play
+  ultimate:
+    description: Use your ultimate
+    usage: /ultimate
+    permission: shieldssmp.play
+  class:
+    description: View class info
+    usage: /class [info|list]
+    permission: shieldssmp.play
+  lives:
+    description: Check lives
+    usage: /lives [player] [set|add] [amount]
+    permission: shieldssmp.play
+  mace:
+    description: Get the Shields SMP Mace
+    usage: /mace [player]
+    permission: shieldssmp.admin
+  macecooldown:
+    description: Get or set mace landing cooldown
+    usage: /macecooldown [seconds]
+    permission: shieldssmp.admin
+  macereload:
+    description: Reload config
+    usage: /macereload
+    permission: shieldssmp.admin
+  givenullifier:
+    description: Give Nullifier Axe
+    usage: /givenullifier [player]
+    permission: shieldssmp.admin
+  giveessence:
+    description: Give Life Essence
+    usage: /giveessence [player] [amount]
+    permission: shieldssmp.admin
+  giveupgrade:
+    description: Give Class Upgrade Core
+    usage: /giveupgrade [player]
+    permission: shieldssmp.admin
+  givereroll:
+    description: Give a Reroll Totem
+    usage: /givereroll [player] [amount]
+    permission: shieldssmp.admin
+  giveshield:
+    description: Force-give a specific class shield
+    usage: /giveshield <player> <class>
+    permission: shieldssmp.admin
+  withdrawlife:
+    description: Withdraw a life (converts to Life Essence)
+    usage: /withdrawlife [player]
+    permission: shieldssmp.play
+  withdrawupgrade:
+    description: Withdraw your class upgrade (get Upgrade Core back)
+    usage: /withdrawupgrade [player]
+    permission: shieldssmp.play
+  giveshieldedset:
+    description: Give the full Shielded Set
+    usage: /giveshieldedset [player]
+    permission: shieldssmp.admin
+  givepocketwatch:
+    description: Give Warden's Pocket Watch
+    usage: /givepocketwatch [player]
+    permission: shieldssmp.admin
+  givenullifieraxe:
+    description: Give the Nullifier Axe
+    usage: /givenullifieraxe [player]
+    permission: shieldssmp.admin
+  givereaper:
+    description: Give the Reaper's Scythe
+    usage: /givereaper [player]
+    permission: shieldssmp.admin
+  giverevivebook:
+    description: Give a Revive Book
+    usage: /giverevivebook [player] [amount]
+    permission: shieldssmp.admin
+  giveshieldedtotem:
+    description: Give the Shielded Totem
+    usage: /giveshieldedtotem [player]
+    permission: shieldssmp.admin
+  giveultupgrader:
+    description: Give the Ultimate Upgrader item
+    usage: /giveultupgrader [player] [amount]
+    permission: shieldssmp.admin
+
+permissions:
+  shieldssmp.play:
+    description: Use class abilities and commands
+    default: true
+  shieldssmp.class:
+    description: Change your class via /class
+    default: true
+  shieldssmp.admin:
+    description: Admin commands
+    default: op
